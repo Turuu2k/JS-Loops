@@ -1,14 +1,58 @@
 // 1. 10 хүртэлх натурал тоог хэвлэх программ бич
 
+// for (let i = 1; i <= 10; i++){
+//     console.log(i)
+// }
+
 // 2. 10 хүртэлх натурал тооны сондгой тоонуудыг хэвлэх программ бич
+
+// for (let i = 1; i <= 10; i = i + 2){
+//     console.log(i)
+// }
 
 // 3. 10 хүртэлх натурал тооны тэгш тоонуудыг хэвлэх программ бич
 
+// for (let i = 0; i <= 10; i = i + 2){
+//     console.log(i)
+// }
+
 // 4. 100 хүртэлх натурал тооны нийлбэрийг олох программ бич
+
+// let sum = 0;
+// for (let i = 0; i <= 100; i++){
+//     sum = sum + i
+// }
+// console.log(sum)
 
 // 5. N хүртэлх натурал тооны хэвлэх болон тэдгээр тооны нийлбэрийг олох программ бич
 
+// let n = 20;
+// let sum = 0;
+// for (let i = 0; i <= n; i++){
+//     console.log(i)
+//     sum = sum + i
+// }
+// console.log(sum)
+
 // 6. Өгөгдсөн тоог анхны мөн эсэхийг олох программ бич
+
+// let num = 7;
+// let isPrime = true;
+// if (num <= 1){
+//     isPrime = false;
+// }else{
+//     for(let i = 2; i < num; i++){
+//         if (num % i === 0){
+//             isPrime = false;
+//             break;
+//         }
+//     }
+// } 
+// if (isPrime){
+//     console.log(num + ' is a prime number')
+// }else {
+//     console.log(num + ' is not a prime number')
+// }
 
 // 7. Өгөгдсөн интервал дахь анхны тоог хэвлэх программ бич
 
@@ -16,11 +60,39 @@
 
 // 9. Өгөгдсөн тооны цифрүүдийн нийлбэрийг олох программ бич
 
+// let num = 6877
+// let strNum = num.toString()
+// let sum = 0
+
+// for (let i = 0; i < strNum.length; i++){
+//     sum = sum + Number(strNum[i]);
+// }
+// console.log(sum)
+
 // 10. N хүртэлх тооны сондгой тоо хэвлэх болон түүний нийлбэрийг олох программ бич
+
+// let n = 10;
+// let sum = 0;
+// for (let i = 1; i <= n; i = i + 2){
+//     console.log(i)
+//     sum = sum + i
+// }
+// console.log(sum)
 
 // 11. N хүртэлх тооны тэгш тоо хэвлэх болон түүний нийлбэрийг олох программ бич
 
+// let n = 10;
+// let sum = 0;
+// for (let i = 0; i <= n; i = i + 2) {
+//   console.log(i);
+//   sum = sum + i;
+// }
+// console.log(sum);
+
 // 12. Өгөгдсөн  эерэг тооны урвууг хэвлэх программ бич // 123 <=> 321
+
+// let num = 123;
+
 
 // 13. Өгөдсөн тооны цифрүүдийг үгээр хэвлэх программ бич
 
