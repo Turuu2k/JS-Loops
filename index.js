@@ -158,6 +158,15 @@
 //  - 1 2 3 4
 //  - 1 2 3 4 5
 
+// let num = 5;
+// for (let i = 1; i <= num; i++) {
+//   let row = "";
+//   for (let j = 1; j <= i; j++) {
+//     row += j + ' ';
+//   }
+//   console.log(row);
+// }
+
 // 17. Давхар давталт 2
 // Бүхэл тоо өгөгдөнө. Жишээн дээрхтэй төстэй тоон хэлбэрийг үүсгэ.
 // Input: 5
@@ -168,17 +177,45 @@
 // - 5 4
 // - 5
 
+// let num = 5;
+// for (let i = num; i >= 1; i--){
+//   row = '';
+//   for (let j = num; j >= num - i + 1; j--){
+//     row += j + ' ';
+//   }
+//   console.log(row)
+// }
+
 // 18. Multiplication Tables
 // Write a for loop that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result
 // (e.g. "2 * 9 = 18").
 // Bonus: Use a nested for loop to show the tables for every multiplier from
 // 1 to 10 (100 results total).
 
+// Үржүүлэх хүснэгт
+// 0-ээс 10 хүртэл давтагдах for давталт бичнэ үү. For давталтын давталт бүрт энэ тоог 9-ээр үржүүлж үр дүнг бүртгэнэ.
+// (жишээ нь: "2 * 9 = 18").
+// Бонус: Үржүүлэгч бүрийн хүснэгтийг харуулахын тулд nested for циклийг ашиглана уу
+// 1-ээс 10 хүртэл (нийт 100 үр дүн).
+
 // 19. Using a for loop print all even numbers up to and including n. Don’t include 0.
 
 // let n1 = 22;
 // Example output:
 // 2 4 6 8 10 12 14 16 18 20 22 OR each item on a new line
+
+// For давталт ашиглан n хүртэлх бүх тэгш тоог хэвлэнэ. 0-г бүү оруул.
+
+// n1 = 22;
+// Жишээ гаралт:
+// 2 4 6 8 10 12 14 16 18 20 22 ЭСВЭЛ шинэ мөрөнд байгаа зүйл бүр
+
+// let  n = 22;
+// let result = '';
+// for (let i = 2; i <= n; i = i + 2){
+//   result += i + ' ';
+// }
+// console.log(result)
 
 // 20. Given a string change the every second letter to an uppercase ‘Z’. Assume
 // there are no space.
@@ -187,3 +224,11 @@
 // Example output:
 // jZvZsZrZpZ OR each letter on a new line
 // HINT: You can use  if((i+1) % 2 == 0) to check for even indexes
+
+let str = "javascript";
+for (let i = 0; i < str.length; i++) {
+  if (i % 2 === 1) {
+    str = str.slice(0, i) + "Z" + str.slice(i + 1, str.length);
+  }
+}
+console.log(str);
