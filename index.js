@@ -225,10 +225,10 @@
 // jZvZsZrZpZ OR each letter on a new line
 // HINT: You can use  if((i+1) % 2 == 0) to check for even indexes
 
-let str = "javascript";
-for (let i = 0; i < str.length; i++) {
-  if (i % 2 === 1) {
-    str = str.slice(0, i) + "Z" + str.slice(i + 1, str.length);
-  }
-}
-console.log(str);
+// let str = "javascript";
+// for (let i = 0; i < str.length; i++) {
+//   if (i % 2 === 1) {
+//     str = str.slice(0, i) + "Z" + str.slice(i + 1, str.length);
+//   }
+// }
+// console.log(str);
