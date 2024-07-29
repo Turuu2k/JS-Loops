@@ -226,9 +226,12 @@
 // HINT: You can use  if((i+1) % 2 == 0) to check for even indexes
 
 // let str = "javascript";
+// let result = '';
 // for (let i = 0; i < str.length; i++) {
-//   if (i % 2 === 1) {
-//     str = str.slice(0, i) + "Z" + str.slice(i + 1, str.length);
+//   if ((i + 1) % 2 === 0){
+//     result += 'Z'
+//   }else {
+//     result += str[i]
 //   }
 // }
-// console.log(str);
+// console.log(result);
